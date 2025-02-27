@@ -1,0 +1,623 @@
+header {
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("C:\\Users\\jtn0c\\Downloads\\bluecar.jpg"); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+    .navbar {
+        background-color: rgb(16, 16, 111); /* Semi-transparent background */
+        padding: 0 20px; /* Initial left and right padding */
+        height: 80px; /* Initial height for the navbar */
+        position: fixed; /* Fixed position to keep it at the top */
+        width: 100%; 
+        z-index: 2; 
+        display: flex; 
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; 
+        transition: all 0.3s ease; /* Smooth transition for changes */
+    }
+    
+    .navbar.shrink {
+        height: 60px; /* Reduced height for the shrunk navbar */
+        padding: 0 10px; /* Adjust padding for the shrunk state */
+        background-color:rgb(16, 16, 111); /* Optional: Change the background color on shrink */
+    }
+    
+
+
+.logo img {
+    height: 240px; /* Increased height for better visibility */
+    width: 240px; /* Maintain aspect ratio */
+    max-width: none; /* Allow the logo to exceed its container */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove padding */
+    display: block; /* Ensure it's treated as a block element */
+    margin-top: 20px;
+}
+
+
+
+
+.navbar ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    margin-right:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 18px; 
+}
+
+.navbar a:hover {
+    text-decoration: underline; 
+}
+
+
+.logo-middle{
+    height: 350px;
+    width:350px;
+    max-width: none;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove padding */
+    display: block;
+}
+
+
+.centertext{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.header-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        z-index: 1;
+    }
+
+
+    .logo-container {
+        display: flex;
+        flex-direction: column; /* Keeps logo and text stacked */
+        align-items: center; /* Centers them */
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-height: 90vh; /* Ensures everything stays within the screen */
+    }
+    
+    .middle-logo {
+        width: auto;
+        height: 600px; /* Scales with screen size */
+        max-height:auto; /* Prevents it from getting too big */
+    }
+    
+    .desc {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: -200px; /* Adjust for spacing */
+        font-size: 24px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        max-width: 90%; /* Keeps text readable */
+    }
+    
+.action{
+    font-size:25px;
+    text-align: center;
+    color: rgb(16, 16, 111);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.number{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.number {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change this color as desired */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.number:hover {
+    background-color: #0056b3; /* Change this to your hover color */
+}
+
+.contact-buttons {
+    display: flex; /* Align buttons in a row */
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0; /* Space around the buttons */
+}
+
+.button {
+    display: inline-block; /* Makes the link behave like a block element */
+    padding: 10px 20px; /* Adds space around the text */
+    background-color: #007bff; /* Background color of the button */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    font-size: 1.5em; /* Adjust the size as needed */
+    margin: 0 10px; /* Space between buttons */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.intro{
+   
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(16, 16, 111);
+}
+
+.auto{
+    height: 450px;
+    width: auto;
+}
+
+.caption{
+    font-size: 25px;
+    color: rgb(173, 4, 4);
+
+}
+
+.gallery{
+    margin-top: 90px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(16, 16, 111);
+
+}
+
+
+
+.cicon img{
+    width: auto; /* Set a uniform width */
+    height: 170px; /* Set a uniform height */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+
+}
+
+
+.call img{
+    width: 150px; /* Set a uniform width */
+    height: 150px; /* Set a uniform height */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+}
+
+    .thumb img {
+        width: 150px; /* Set a uniform width */
+        height: 150px; /* Set a uniform height */
+        object-fit: contain; /* Maintain aspect ratio without distortion */
+    }
+    
+    .warranty img{
+        width:auto;
+        height: 170px;
+        object-fit: contain;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: flex; /* Enable flexbox for the container */
+        justify-content: center; /* Center items in the container */
+        align-items: center; /* Center icons vertically */
+        height: 150px; /* Set the height as needed */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        gap: 125px; /* Adjust this value for more or less space between icons */
+    }
+    
+
+    .caption {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; /* Center the caption text */
+    margin-top: 5px; /* Add space between the image and the caption */
+    color:rgb(16, 16, 111); /* Change color if needed */
+}
+
+.slideshow-wrapper {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    margin-left: 250px;
+    margin-top: 45px;
+    margin-bottom: 90px;
+}
+
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* Full width of the container */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack slides vertically */
+    align-items: center; /* Center items horizontally */
+    border: 9px solid darkblue; /* Thin black border around the slideshow */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 5px; /* Optional: space between border and content */
+}
+
+.slide {
+    display: none; /* Hide all slides initially */
+    position: relative;
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+.slide img {
+        width: 100%; /* Full width of the slide container */
+        height: 450px; /* Set a fixed height for all images */
+        object-fit: cover; /* Crop the images to fill the container */
+        margin: 0 auto; /* Center the image */
+        display: block; /* Center block element */
+    }
+    
+
+.text {
+    position: absolute;
+    bottom: 20px; /* Position text at the bottom */
+    left: 20px; /* Position text on the left */
+    color: white; /* Change text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background for readability */
+    padding: 10px; /* Padding for text */
+}
+
+/* Button Styles */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px; /* Adjust padding */
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    z-index: 1; /* Ensure buttons are above the slides */
+}
+
+.prev {
+    left: 10px; /* Position left */
+}
+
+.next {
+    right: 10px; /* Position right */
+}
+
+.text-next-to-slideshow {
+    margin-left: 50px; /* Space between slideshow and text */
+    max-width: 300px; /* Limit width of text section */
+}
+
+/* Animation */
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide {
+    animation: fade 1s; /* Fade-in effect */
+}
+
+.service{
+    margin-top: 90px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(16, 16, 111);
+    font-size: 35px;
+
+}
+
+.gallery-section {
+    text-align: center; 
+    margin: 40px 0;
+}
+
+.gallery-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 200px; /* Makes images uniform */
+    object-fit: cover; /* Ensures cropping without stretching */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #003a7d; /* Thin border around images */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+
+footer {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #002244; /* Dark blue */
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: #FFD700; /* Gold accent */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-section .social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #FFD700;
+}
+
+.quote-reminder {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-top: 2px solid #007bff; /* Blue top border */
+}
+
+.call-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff; /* Blue button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media only screen and (max-width: 768px) {
+    .slideshow-wrapper {
+        display: flex; /* Use flexbox to arrange items */
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start; /* Align items to the left */
+        width: 100%; /* Ensure full width */
+        margin: 0; /* Remove margin */
+    }
+
+    .slideshow-container {
+        width: 90%; /* Full width for the slideshow */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+
+    .slide img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .text-next-to-slideshow {
+        width: 100%; /* Full width for text */
+        margin-left:50px; /* Remove margin */
+    }
+
+    .navbar {
+        display: none; /* Hide navbar on mobile */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .slideshow-container .text h2 {
+        font-size: 25px; /* Adjust the font size for the heading */
+        margin-top: 45px;
+    }
+
+    .slideshow-container .text p {
+        font-size: 20px; /* Adjust the font size for the paragraph */
+        margin-top: -3px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slide .text {
+        font-size: 14px; /* Adjust text size for mobile */
+        padding: 10px; /* Add some padding if needed */
+    }
+
+    .slide {
+        position: relative;
+    }
+
+    .slide .text {
+        position: absolute;
+        bottom: 10px; /* Position text at the bottom */
+        left: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        color: white; /* Text color */
+        padding: 5px; /* Padding for the text box */
+        border-radius: 5px; /* Rounded corners */
+    }
+}
+
+/* Mobile navbar styles */
+.mobile-navbar {
+    display: none; /* Hide by default */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+/* Show mobile navbar only on mobile devices */
+/* Mobile navbar styles */
+.mobile-navbar {
+    display: none; /* Hide by default */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add some padding for spacing */
+    position: fixed; /* Fix position at the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    right: 0; /* Align to the right of the viewport */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Show mobile navbar only on mobile devices */
+@media only screen and (max-width: 768px) {
+    .mobile-navbar {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        display: flex; /* Show the mobile navbar */
+        background-color: rgb(16, 16, 111); /* Optional: Add background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    }
+}
+
+
+.call-now {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add padding for button */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* CSS for mobile devices */
+/* CSS for mobile devices */
+
+.cicon,
+.thumb,
+.call,
+.warranty {
+    display: block; /* Keep icons visible on desktop */
+}
+
+.mobile-image {
+    display: none; /* Hide on desktop by default */
+}
+
+@media (max-width: 768px) { /* Adjust this value as needed for your breakpoints */
+    .cicon,
+    .thumb,
+    .call,
+    .warranty {
+        display: none; /* Hide icons on mobile */
+    }
+
+    .mobile-image {
+        display: block; /* Show image on mobile */
+        width: 100%; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove any default margin */
+        padding: 0; /* Remove any default padding */
+    }
+}
+
