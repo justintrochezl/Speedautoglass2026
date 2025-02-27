@@ -38,8 +38,8 @@ header::before {
         background-color:rgb(16, 16, 111); /* Optional: Change the background color on shrink */
     }
     
-body {
-    font-family: "Oswald", sans-serif;
+    body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .logo img {
