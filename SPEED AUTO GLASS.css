@@ -640,6 +640,10 @@ footer {
     }
 }
 
-
+@media only screen and (max-width: 768px) {
+    .number {
+        font-size: 12px;  /* Change this to your desired mobile font size */
+    }
+}
 
 
