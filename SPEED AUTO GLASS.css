@@ -642,7 +642,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .number {
-        font-size: 12px;  /* Change this to your desired mobile font size */
+        font-size: 35px;  /* Change this to your desired mobile font size */
         white-space: nowrap;  /* Prevent line break on mobile */
     }
 }
