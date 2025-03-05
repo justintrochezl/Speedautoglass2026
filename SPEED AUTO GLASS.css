@@ -146,7 +146,7 @@ html {
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         max-width: 90%; /* Keeps text readable */
-        font-weight:bold;
+        font-weight:bolder;
     }
     
 .action{
