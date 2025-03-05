@@ -140,7 +140,7 @@ html {
     }
     
     .desc {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
         margin-top: -200px; /* Adjust for spacing */
         font-size: 19px;
         color: white;
