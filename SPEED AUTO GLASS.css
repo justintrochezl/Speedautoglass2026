@@ -39,7 +39,8 @@ header::before {
     }
     
     body {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
+
 }
 
 .logo img {
@@ -91,7 +92,7 @@ header::before {
 
 
 .centertext{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -634,4 +635,6 @@ footer {
         font-size: inherit; /* Ensures the font size is inherited from the default desktop size */
     }
 }
+
+
 
