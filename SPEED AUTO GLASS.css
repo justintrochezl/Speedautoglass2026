@@ -624,3 +624,13 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    body {
+        font-family: 'Roboto', sans-serif; /* Mobile font */
+    }
+
+    /* If you want to adjust only the font for mobile and not the size */
+    h1, h2, h3, p {
+        font-size: inherit; /* Ensures the font size is inherited from the default desktop size */
+    }
+}
