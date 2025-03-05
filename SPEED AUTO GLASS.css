@@ -151,10 +151,12 @@ html {
     }
     
 .action{
+    
     font-size:25px;
     text-align: center;
     color: rgb(16, 16, 111);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
+
 }
 .number{
     font-weight: bold;
@@ -200,7 +202,7 @@ html {
 .intro{
    
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
     font-size: 20px;
     color: rgb(16, 16, 111);
 }
@@ -211,6 +213,7 @@ html {
 }
 
 .caption{
+    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
     font-size: 25px;
     color: rgb(173, 4, 4);
 
@@ -576,7 +579,8 @@ footer {
 /* Show mobile navbar only on mobile devices */
 @media only screen and (max-width: 768px) {
     .mobile-navbar {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
         color: white;
         display: flex; /* Show the mobile navbar */
         background-color: rgb(16, 16, 111); /* Optional: Add background color */
@@ -586,7 +590,7 @@ footer {
 
 
 .call-now {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
     background-color: #007bff; /* Button background color */
     color: white; /* Button text color */
     border: none; /* Remove border */
