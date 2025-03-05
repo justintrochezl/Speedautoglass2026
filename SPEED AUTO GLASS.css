@@ -635,9 +635,3 @@ footer {
     }
 }
 
-/* Prevent horizontal scrolling */
-body, html {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
