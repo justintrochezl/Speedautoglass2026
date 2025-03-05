@@ -634,3 +634,10 @@ footer {
         font-size: inherit; /* Ensures the font size is inherited from the default desktop size */
     }
 }
+
+/* Prevent horizontal scrolling */
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
