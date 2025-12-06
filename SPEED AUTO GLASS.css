@@ -757,8 +757,8 @@ footer {
     margin-left: 50px; /* Space between slideshow and text */
     max-width: 300px; /* Limit width of text section */
     color: #ffffff;
-    background-color: rgb(15, 0, 62);
-    border: 6px solid #002244;
+    background-color: #002244;
+    border: 6px solid #011932;
     max-width: 75%; /* Expand width to your liking */
     margin-top: 20px;
     }
@@ -793,6 +793,7 @@ footer {
     }
 
 }
+
 
 
 
