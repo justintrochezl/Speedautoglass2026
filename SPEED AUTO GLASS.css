@@ -201,7 +201,7 @@ html {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
-    color: rgb(16, 16, 111);
+    color: rgb(255, 255, 255);
 }
 
 .introLL{
@@ -211,7 +211,7 @@ html {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
-    color: rgb(16, 16, 111);
+    color: rgb(255, 255, 255);
 }
 
 .auto{
@@ -658,7 +658,7 @@ footer {
     margin-top: -450px;
     width: 400px;   /* or any smaller value */
     height: auto;   /* keeps aspect ratio */
-    border: 3px solid #003a7d; /* solid blue border */
+    border: 3px solid #ffffff; /* solid blue border */
     border-radius: 10px; /* optional: rounded corners */
 }
 
@@ -675,7 +675,120 @@ footer {
     margin-top: -390px;
     width: 400px;   /* or any smaller value */
     height: auto;   /* keeps aspect ratio */
-    border: 3px solid #003a7d; /* solid blue border */
+    border: 3px solid #ffffff; /* solid blue border */
     border-radius: 10px; /* optional: rounded corners */
 }
 
+/* -------------------------------------------------
+   MOBILE FIX — ONLY for About Us sections
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Fix layout: stack image + text vertically */
+    .side-image,
+    .side-image2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        gap: 20px;
+    }
+
+    /* Fix images: remove ALL desktop margins */
+    .side-image img,
+    .side-image2 img {
+        margin: 0 !important;
+        width: 85%;
+        height: auto;
+    }
+
+    /* Fix text next to the images */
+    .side-image p,
+    .side-image2 p {
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* Fix intro text (the blue paragraphs) */
+    .intro,
+    .introLL {
+        margin: 20px auto 0 auto !important;
+        font-size: 18px;
+        text-align: left;
+        max-width: 90%;
+    }
+    
+    .gallery{
+    margin-top: 90px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(16, 16, 111);
+
+    }
+    .box{
+    background-color: #002244; /* Same blue as navbar */
+    padding: 30px;
+    margin: 40px auto;
+    width: 84%;
+    max-width: 1100px;
+    }
+    .title2{
+        font-size: 35px;
+
+    }
+    .title3{
+        font-size: 35px;
+
+    }
+    .introLL p br {
+        display: none; /* Hides <br> tags on mobile */
+    }
+
+     .intro p br {
+        display: none; /* Hides <br> tags on mobile */
+    }
+
+    .text-next-to-slideshow {
+    margin-left: 50px; /* Space between slideshow and text */
+    max-width: 300px; /* Limit width of text section */
+    color: #ffffff;
+    background-color: rgb(15, 0, 62);
+    border: 6px solid #10023a;
+    max-width: 75%; /* Expand width to your liking */
+    margin-top: 20px;
+    }
+
+     .container{
+        display: none;
+    }
+}
+
+/* Style the icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* More space between icons */
+    margin: 30px 0; /* Space above and below */
+}
+
+.contact-icons .icon-link img {
+    width: 80px;  /* Big enough for touch on mobile */
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.contact-icons .icon-link img:hover {
+    transform: scale(1.2); /* Hover effect */
+}
+@media (min-width: 769px){
+    .box{
+    background-color: #002244;
+    padding:10px;
+    }
+
+}
