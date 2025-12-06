@@ -758,7 +758,7 @@ footer {
     max-width: 300px; /* Limit width of text section */
     color: #ffffff;
     background-color: rgb(15, 0, 62);
-    border: 6px solid #10023a;
+    border: 6px solid #002244;
     max-width: 75%; /* Expand width to your liking */
     margin-top: 20px;
     }
@@ -793,5 +793,6 @@ footer {
     }
 
 }
+
 
 
