@@ -38,10 +38,7 @@ header::before {
         background-color:rgb(16, 16, 111); /* Optional: Change the background color on shrink */
     }
     
-    body {
-    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
 
-}
 
 .logo img {
     height: 240px; /* Increased height for better visibility */
@@ -62,7 +59,7 @@ header::before {
     padding: 0; 
     display: flex; 
     margin-right:25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar li {
@@ -92,7 +89,7 @@ header::before {
 
 
 .centertext{
-    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -141,22 +138,20 @@ html {
     }
     
     .desc {
-        font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-top: -200px; /* Adjust for spacing */
-        font-size: 19px;
+        font-size: 24px;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         max-width: 90%; /* Keeps text readable */
-        font-weight:bold;
+        font-weight: bold;
     }
     
 .action{
-    
     font-size:25px;
     text-align: center;
     color: rgb(16, 16, 111);
-    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .number{
     font-weight: bold;
@@ -200,10 +195,22 @@ html {
 }
 
 .intro{
-   
-    text-align: center;
-   font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
-    font-size: 20px;
+    line-height: 2;
+    margin-top: 200px;
+    margin-left: 225px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(16, 16, 111);
+}
+
+.introLL{
+    line-height: 2;
+     margin-top: 200px;
+    margin-left: 900px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
     color: rgb(16, 16, 111);
 }
 
@@ -213,7 +220,6 @@ html {
 }
 
 .caption{
-    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
     font-size: 25px;
     color: rgb(173, 4, 4);
 
@@ -257,7 +263,8 @@ html {
     }
 
     .container {
-        margin-top: 100px;
+        margin-bottom:150px;
+        margin-top: 150px;
         display: flex; /* Enable flexbox for the container */
         justify-content: center; /* Center items in the container */
         align-items: center; /* Center icons vertically */
@@ -579,8 +586,7 @@ footer {
 /* Show mobile navbar only on mobile devices */
 @media only screen and (max-width: 768px) {
     .mobile-navbar {
-        
-        font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white;
         display: flex; /* Show the mobile navbar */
         background-color: rgb(16, 16, 111); /* Optional: Add background color */
@@ -590,7 +596,7 @@ footer {
 
 
 .call-now {
-    font-family: 'Franklin Gothic Medium', Verdana, Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #007bff; /* Button background color */
     color: white; /* Button text color */
     border: none; /* Remove border */
@@ -631,7 +637,7 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        font-family: 'Verdana', sans-serif; /* Mobile font */
+        font-family: 'Roboto', sans-serif; /* Mobile font */
     }
 
     /* If you want to adjust only the font for mobile and not the size */
@@ -639,19 +645,37 @@ footer {
         font-size: inherit; /* Ensures the font size is inherited from the default desktop size */
     }
 }
-
-@media only screen and (max-width: 768px) {
-    .number {
-        font-size: 35px;  /* Change this to your desired mobile font size */
-        white-space: nowrap;  /* Prevent line break on mobile */
-    }
+.side-image {
+    display: flex;
+    align-items: center;   /* vertically center text & image */
+    justify-content: flex-end; /* push content to the right */
+    gap: 30px;             /* space between image and text */
+    margin: 50px;
 }
 
-html, body {
-    overflow-x: hidden;  /* Prevent horizontal scrolling */
-    margin: 0;  /* Remove default margin */
-    padding: 0;  /* Remove default padding */
+.side-image img {
+    margin-right:90px;
+    margin-top: -450px;
+    width: 400px;   /* or any smaller value */
+    height: auto;   /* keeps aspect ratio */
+    border: 3px solid #003a7d; /* solid blue border */
+    border-radius: 10px; /* optional: rounded corners */
 }
 
+.side-image2 {
+    display: flex;
+    align-items: center;   /* vertically center text & image */
+    justify-content: flex-start; /* push content to the right */
+    gap: 30px;             /* space between image and text */
+    margin: 50px;
+}
 
+.side-image2 img {
+   margin-left:220px;
+    margin-top: -390px;
+    width: 400px;   /* or any smaller value */
+    height: auto;   /* keeps aspect ratio */
+    border: 3px solid #003a7d; /* solid blue border */
+    border-radius: 10px; /* optional: rounded corners */
+}
 
