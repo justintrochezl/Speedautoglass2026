@@ -590,7 +590,7 @@ footer {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white;
         display: flex; /* Show the mobile navbar */
-        background-color:#010a60; /* Optional: Add background color */
+        background-color:#010955; /* Optional: Add background color */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
     }
 }
@@ -859,6 +859,7 @@ footer {
   }
 
 }
+
 
 
 
